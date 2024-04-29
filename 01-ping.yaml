@@ -1,0 +1,5 @@
+- name: ping the server
+  hosts: web  # if we have .ini file with all ip address in ini file it will pickup from that file and ping all the servers
+  tasks: # list of tasks/modules/collections everything are same
+   - name: pinging the server
+    ansible.builtin.ping:   # this is built in to ping servers
