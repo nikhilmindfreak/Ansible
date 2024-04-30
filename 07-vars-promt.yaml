@@ -1,6 +1,6 @@
 - name: variables from files
   hosts: localhost
-  vars_promt:   # command to fetch variables from promt by used in command line
+  vars_prompt:   # command to fetch variables from promt by used in command line
   - name: USERNAME
     prompt: please enter username   # whatever you eneter in promt go into username var
     priavte: false    # if you want see the txt on kerenl give fasle or true to hide
