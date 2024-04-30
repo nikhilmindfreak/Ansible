@@ -1,0 +1,8 @@
+- name: variables from files
+  hosts: localhost
+  vars_files:   # command to fetch variables from other files
+  - vars.yaml    # file name
+  tasks:
+  - name: print override information
+    ansible.builtin.debug:
+      msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."

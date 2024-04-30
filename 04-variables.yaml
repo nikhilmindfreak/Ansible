@@ -7,4 +7,4 @@
   tasks:
   - name: print information
     ansible.builtin.debug:
-      msg: "am learning {{course}} with {{trainer}} in {{duration}}."  # two flower braces to treat it as variable
+      msg: "am learning {{course}} with {{trainer}} in {{duration}}."  # two flower braces to declare it as variable

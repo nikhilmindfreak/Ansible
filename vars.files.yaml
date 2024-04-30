@@ -1,0 +1,3 @@
+course: "ansible"       # in ansible everything is key and values
+trainer: "bash"
+duration: "10hrs"
