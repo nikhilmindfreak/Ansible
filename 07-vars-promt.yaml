@@ -3,10 +3,10 @@
   vars_prompt:   # command to fetch variables from promt by used in command line
   - name: USERNAME
     prompt: please enter username   # whatever you eneter in promt go into username var
-    priavte: false    # if you want see the txt on kerenl give fasle or true to hide
+    private: false    # if you want see the txt on kerenl give fasle or true to hide
   - name: PASSWORD
     prompt: please enter password
-    priavte: true    
+    private: true    
   tasks:
   - name: print override information
     ansible.builtin.debug:
