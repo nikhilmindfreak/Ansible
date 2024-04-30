@@ -3,7 +3,7 @@
   vars:   # vars is variable declaration                   
     course: "ansible"       # in ansible everything is key and values
     trainer: "bash"
-    duration: "120hrs"                
+    duration: "10hrs"                
   tasks:
   - name: print information
     ansible.builtin.debug:
