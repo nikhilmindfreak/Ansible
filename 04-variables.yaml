@@ -3,8 +3,8 @@
   vars:   # vars is variable declaration                   
     course: "ansible"       # in ansible everything is key and values
     trainer: "bash"
-    Duration: "120hrs"                
+    duration: "120hrs"                
   tasks:
   - name: print information
     ansible.builtin.debug:
-      msg: "am learning {{ansible}} with {{bash}} in {{120hrs}}."  # two flower braces to treat it as variable
+      msg: "am learning {{course}} with {{trainer}} in {{duration}}."  # two flower braces to treat it as variable
