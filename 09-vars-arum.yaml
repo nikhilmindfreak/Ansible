@@ -1,0 +1,6 @@
+- name: varibles from aygumnets 
+  hosts: localhost
+  tasks:
+  - name: get from argum
+    ansible.builtin.debug:
+     msg: "hello {{PERSON}}, good {{WISHES}}"
