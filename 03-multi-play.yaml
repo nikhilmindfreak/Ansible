@@ -4,8 +4,8 @@
   - name: PLAY-1 and TASK-1
     ansible.builtin.debug:    # debug is to play the message like echo
       msg: " hello I am playing 1 and task 1"
-# lets write play 2 also
 
+# lets write play 2 also
 - name: PLAY-2
   hosts: localhost  # we gave here local host which the server where ansible is installed
   tasks:
