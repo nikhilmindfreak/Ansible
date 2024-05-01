@@ -8,8 +8,8 @@
   - name: number is less than 10
     ansible.builtin.debug:
       msg: "given number {{number}} is less than 10"
-    when: number < 10    #first the condition checks the when then read the task
+    when: number | int < 10    #first the condition checks the when then read the task
   - name: number is greater than or equal to 10
     ansible.builtin.debug:
       msg: "given number {{number}} is less than 10"
-    when: number >= 10
+    when: number | int >= 10  #herew we gave pipe and int | int to convert the string to txt
