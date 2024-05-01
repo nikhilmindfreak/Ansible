@@ -3,4 +3,7 @@
   tasks:
   - name: printing echo
     ansible.builtin.debug:
-     msg: "hello"
+     var: 
+      HELLO: 1
+      HEY: 2
+     msg: "{{hello}}"
