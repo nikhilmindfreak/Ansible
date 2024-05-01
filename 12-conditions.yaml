@@ -3,13 +3,13 @@
   become: yes
   tasks:
   - name: check user exists or not
-    ansible.builtin.command: id expense
+    ansible.builtin.command: id expense  # here we gave a command as not all modules exits , so as we dont have we can give modules
     register: USER
-    ignore_errors: true
+    ignore_errors: true  #to ignore any error and move forward
 
   - name: print user information
     ansible.builtin.debug:
-      msg: "User info: {{USER}}"
+      msg: "User info: {{USER}}"  # user is the variable
 
   - name: create user
     ansible.builtin.command: useradd expense
