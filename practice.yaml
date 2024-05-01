@@ -1,9 +1,12 @@
 - name: printing name
   hosts: localhost
+  vars: 
+      HELLO: 1
+      HEY: 2
   tasks:
   - name: task 1
     vars: 
-      HELLO: 1
-      HEY: 2
+      HELLO: 3
+      HEY: 4
     ansible.builtin.debug:
-      msg: "{{hello}}"
+      msg: "{{HELLO}}"
