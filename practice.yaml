@@ -1,6 +1,6 @@
 - name: printing name
-  host: localhost
+  hosts: localhost
   task:
-  - name: print name
+  - name: printing echo
     ansible.builtin.debug:
      msg: "hello"
