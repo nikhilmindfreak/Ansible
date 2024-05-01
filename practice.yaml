@@ -1,8 +1,5 @@
 - name: printing name
   hosts: localhost
-  vars: 
-      HELLO: 1
-      HEY: 2
   tasks:
   - name: task 1
     vars: 
