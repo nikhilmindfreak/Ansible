@@ -1,0 +1,10 @@
+- name: variables
+  hosts: localhost
+  vars:   # vars is variable declaration                   
+    course: "ansible"       # in ansible everything is key and values
+    trainer: "bash"
+    duration: "10hrs"                
+  tasks:
+  - name: print information
+    ansible.builtin.debug:
+      msg: "am learning {{course}} with {{trainer}} in {{duration}}."  # two flower braces to declare it as variable
